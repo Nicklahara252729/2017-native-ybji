@@ -1,0 +1,1 @@
+ukuran foto :  350 pixel X 350 pixel

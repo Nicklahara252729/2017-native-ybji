@@ -1,0 +1,665 @@
+@font-face{
+    font-family:'Raleway';
+    src:url(../fonts/Raleway-Regular.woff) format('truetype');
+}
+@font-face{
+    font-family:'Golf';
+    src:url(../fonts/Golf.ttf) format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.float-right{
+    float: right;
+}
+.btn{
+    border: 0;
+    color: #565657;
+}
+.padding{
+    padding: 10px;
+}
+.pad-top-1{
+    padding-top: 10px;
+}
+.pad-bot-1{
+    padding-bottom: 10px;
+}
+.mar-top-1{
+    margin-top: 10px;
+}
+.mar-top-2{
+    margin-top: 20px;
+}
+.mar-top-3{
+    margin-top: 30px;
+}
+.mar-top-4{
+    margin-top: 40px;
+}
+.mar-top-5{
+    margin-top: 60px;
+}
+.btn-bor-red,
+.btn-bor-white,
+.btn-bor-black{
+    font-size: 13px;
+    font-family: "calibri";
+    background: transparent;
+}
+.btn-white:hover{
+    background: white;
+    border: 0;
+}
+.btn-bor-black{
+    border: solid 1px #565657;
+}
+.margin-top-1{
+    margin-top: 10px;
+}
+.margin-top-04{
+    margin-top: 4px;
+}
+.ico-social{
+    width: 25px;
+    height: 25px;
+}
+.border-left-red{
+    border-left: solid 1px #B33632;
+}
+.border-right{
+    border-right:solid 1px lightgray;
+}
+.fb,
+.ig,
+.tw,
+.yt{
+    width: 30px;
+    height: 30px;
+    border: solid 1px #565657;
+    border-radius: 50%;
+    background-size:contain;
+    background-position: center;
+}
+.fb_7th,
+.ig_7th,
+.tw_7th,
+.yt_7th{
+    background-size:contain;
+    background-position: center;
+}
+.fb,.fb_7th{
+    background-image: url(../g_pic/social/Facebook02.png);
+}
+.ig,.ig_7th{
+    background-image: url(../g_pic/social/Instagram02.png);
+}
+.tw,.tw_7th{
+    background-image: url(../g_pic/social/Twitter02.png);
+}
+.yt,.yt_7th{
+    background-image: url(../g_pic/social/Youtoube02.png);
+}
+.fb:hover,.fb_7th:hover{
+    background-image: url(../g_pic/social/Facebook.png);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border: 0;
+}
+.ig:hover,.ig_7th:hover{
+    background-image: url(../g_pic/social/Instagram.png);
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 0;
+}
+.tw:hover,.tw_7th:hover{
+    background-image: url(../g_pic/social/Twitter.png);
+    cursor: pointer;
+    transition: all 0.5s ;
+    border: 0;
+}
+.yt:hover,.yt_7th:hover{
+    background-image: url(../g_pic/social/Youtoube.png);
+    cursor: pointer;
+    transition: all 0.5s ;
+    border: 0;
+}
+.ul-social{
+    float: left;
+    margin-top: 5px;
+}
+body{
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+header{
+    border-top: solid 3px #B33632;
+    background: white;
+    box-shadow: 0px 0px 10px 0px lightgray;
+    z-index: 999;
+}
+.img-logo{
+    width: 100%;
+    max-width: 250px;
+    min-width: 200px;
+}
+.img-logo-nd{
+    display: none;
+    max-width: 80px;
+}
+.img-logo-nd-2{
+    display: none;
+}
+
+.sec-logo{
+    display: none;
+}
+.sec-img-logo{
+    width: 100%;
+    max-width: 160px;
+    padding-top: 5px;
+}
+.no-padding{
+    padding: 0;
+}
+.no-padding-bottom{
+    padding-bottom: 0;
+}
+.no-padding-top{
+    padding-top: 0;
+}
+header ul{
+    list-style: none;
+    float: right;
+}
+header li{
+    float: left;
+    padding-left: 5px;
+}
+
+.menu{
+    padding-top: 40px;
+    height: 95px;
+}
+#sec-menu{
+    display: none;
+}
+.media{
+    margin-top: 40px;
+}
+.menu ul{
+    float: left;
+}
+.menu ul li{
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 53px;
+    font-family: "raleway";
+    text-transform: uppercase;
+    transition: all 0.1s ;
+    font-size: 12px;
+    color: #565657;
+    
+}
+.menu ul li:hover{
+    cursor: pointer;
+    border-bottom: solid 3px #337AB7;
+}
+.menu ul li:hover a{
+    text-decoration: none;
+}
+.menu ul li:hover .rot{
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+.menu ul li:hover .obj-who,
+.menu ul li:hover .obj-act,
+.menu ul li:hover .obj-tar{
+    display: block;
+    transition: all 1s ease-in-out;
+}
+.menu li li:hover{
+    border-bottom: 0;
+    border-left: solid 4px #FCF513;
+    background: #f8f8f8;
+}
+.obj-who,
+.obj-act,
+.obj-tar{
+    background: white;
+    position: absolute;
+    width: 250px;
+    margin-top: 3px;
+    display: none;
+    z-index: 9999;
+    box-shadow: 2px 2px 2px lightgray;
+}
+.obj-act,
+.obj-tar{
+    width: 300px;
+}
+.obj-who ul,
+.obj-act ul,
+.obj-tar ul{
+    float: left;
+    width: 100%;
+}
+.obj-who li,
+.obj-act li,
+.obj-tar li{
+    float: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "calibri";
+    height: 50px;
+    color: #565657;
+}
+.jumbo-head{
+    margin: 0;
+    
+    background-image: url(../g_pic/assets/indo2.gif);
+    background-size: 100%;
+    background-position:  center;
+    background-blend-mode: luminosity;
+     z-index: 999;
+    position: relative;
+}
+.in-jumbo-head{
+    width: 100%;
+    height: 100%;
+    background-image: url(../g_pic/assets/lapisan.png);
+    background-size: 100% 100%;
+}
+.img-jumbo-head{
+    height: 200px;
+    background-image: url(../g_pic/txtjumbotron.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn-things
+{
+    border-bottom: solid 1px white;
+    background: transparent;
+    color: white;
+    font-family: "calibri";
+    height: 40px;
+    width: 32%;
+    border-radius: 0;
+    transition: all 0.5s;
+}
+
+.btn-things:hover
+{
+    background: white;
+    color: #565657;
+}
+
+.fill-in-content-st{
+    padding: 0;
+}
+.content-st{
+    background-image: url(../g_pic/bg_2.png);
+    height: 600px;
+     z-index: 9;
+    position: relative;
+}
+.in-content-st{
+    height: 100%;
+    background-image: url(../g_pic/pc.png);
+    padding: 58px 0px 0px 140px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 99;
+    border-bottom: solid 3px #B33632;
+}
+.content-nd{
+    padding: 0;
+     z-index: 9;
+    background: white;
+    position: relative;
+}
+.fill-content-nd{
+    height: 250px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.img-content-nd,
+.title-content-nd{
+    padding: 0;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 100px;
+    opacity: 0;
+    -webkit-transition: all 1s ease-out ;	
+	   -moz-transition: all 1s ease-out ;
+		 -o-transition: all 1s ease-out ;
+		    transition: all 1s ease-out ;
+}
+.img-content-nd{
+    border-top: solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
+}
+.title-content-nd{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    z-index: 99;
+    font-family: "raleway";
+}
+.img-content-nd span{
+    position: absolute;
+    font-size: 35px;
+    z-index: 99;
+    margin-top: 20px;
+}
+.img-three,
+.img-two{
+    border-right: solid 1px lightgray;
+}
+.img-four,
+.img-one{
+    border-left: solid 1px lightgray;
+}
+.img-one span{
+    right: -10px;
+    color: #FCF513;
+}
+.img-two span{
+    left: -10px;
+    color: #F39C12;
+}
+.img-four span{
+    right: -10px;
+    color: #337AB7;
+}
+.img-three span{
+    left: -10px;
+    color: #CC204A;
+}
+.title-one{
+    background: #FCF513;
+}
+.title-one button:hover{
+    background: #eee700;    
+}
+.title-two{
+    background: #F39C12;
+}
+.title-two button:hover{
+    background: #ffc262;
+}
+.title-three{
+    background: #CC204A;
+    color: white;
+}
+.title-three button:hover{
+    background: #ea5f81;
+    color: white;
+}
+.title-four{
+    background: #337AB7;
+    color: white;
+}
+.title-four button:hover{
+    background: #74bee9;
+    color: white;
+}
+.img-content-nd img{
+    width: 100%;
+    height: 100%;
+}
+.medium{
+    font-size: 14px;
+}
+blockquote{
+    text-align: left;
+}
+.content-6th{
+    height: 700px;
+    background-image: url(../g_pic/bg_2.png);
+    z-index: 9;
+    position: relative;
+}
+.container-6th{
+    height: 100%;
+}
+.fill-content-6th,
+.sec-fill-content-6th{
+    height: 100%;
+    background-image: url(../g_pic/gama.png);
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-size:contain;
+}
+.sec-fill-content-6th{
+    background: transparent;
+    
+}
+.basic-footer{
+    bottom: 0;
+    background-image: url(../g_pic/bg.png);
+    width: 100%;
+    padding-top: 20px;
+}
+.txt-content-footer{
+    font-family: "raleway";
+    font-size: 14px;
+    color: #fff;
+}
+.copyright{
+    text-align: center;
+    padding-top: 10px;
+    border-top: dashed 1px #fff;
+}
+.bor-left-dashed{
+    border-left: dashed 1px #fff;
+}
+.bor-left-solid-5{
+    border-left: solid 5px lightgray;
+}
+
+.bor-top-dashed{
+    border-top: dashed 1px gray;
+}
+.bor-bot-dashed{
+    border-bottom: dashed 1px gray;
+}
+.bor-bot-solid{
+    border-bottom: solid 2px gray;
+}
+.coming-soon{
+    margin-top: 280px;
+    margin-left: 220px;
+    font-size: 30px;
+    font-family: "raleway";
+}
+.uppercase{
+    text-transform:uppercase;
+}
+.date-coming{
+    color: white;
+    height: 50px;
+    background: url(../g_pic/pita.png) no-repeat center 100%;
+    line-height: 40px;
+}
+.info-coming{
+    color: white;
+    padding: 10px;
+}
+.btn-proposal{
+    padding-left: 90px;
+}
+.btn-proposal button{
+    background: transparent;
+    color: white;
+    border:solid 1px white;
+}
+.btn-proposal button:hover{
+    background: white;
+    color: #565657;
+}
+.title-cerita-kami{
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    font-family: "raleway";
+    font-size: 30px;
+    text-transform: uppercase; 
+    color: black;
+    transition: all 0.7s ease-in-out;
+    height: 0px;   
+}
+.title-cerita-kami p{
+    display: none;
+}
+.raleway{
+    font-family: "raleway" !important;  
+}
+.f-10{
+    font-size: 10.5px;
+}
+.f-15{
+    font-size: 15px;
+}
+.f-20{
+    font-size: 20px;
+}
+.bg-abu{
+    background: #f8f8f8;
+}
+.bg-dark-abu{
+    background: gray;
+    color: white;
+}
+.bg-putih{
+    background: white;
+}
+
+.bor-rig-solid-bold-kuning{
+    border-right: solid 5px #FCF513;
+}
+.img-min-200{
+    min-width: 500px;
+}
+.img-max-300{
+    max-width: 300px;
+}
+
+.in-mitra{
+    background: rgba(204,32,74,.7);
+}
+.carousel-control{
+    background: black;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.car-con{
+    margin-top: 70px;
+}
+.car-con-2{
+    margin-top: 100px;
+}
+.con-top{
+    display: none;
+}
+.main-serti{
+    background-image: url(../g_pic/back.png);
+    background-attachment: fixed;
+}
+.serti{
+    box-shadow: 0px 0px 3px 0px lightgray;
+    background: white;
+}
+.serti img{
+    width: 200px;
+}
+.ring-name{
+    border-left: solid 3px gray;
+    background: #f8f8f8;
+}
+.experience{
+    
+    padding-top: 10px;
+}
+.experience p{
+    
+    padding-bottom: 5px;
+}
+.experience ul{
+    padding-left: 40px;
+    margin-top: 0;
+    font-size: 13px;
+}
+.experience ol{
+    padding-left: 40px;
+}
+.backtotop{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 23px;
+    padding-top: 5px;
+    z-index: 999;
+    display: none;
+}
+.right{
+    float: right;
+}
+.text-right{
+    text-align: right;
+}
+.text-jus{
+    text-align: justify
+}
+.csclone{
+    position: absolute;
+    opacity: 0;
+}
+.bg-img{
+    background-image: url(../g_pic/bg.png) ;
+    background-attachment: fixed;
+}
+.latar{
+    font-size: 40px;
+    text-decoration: underline;
+    color: #4a4a4a;
+    border-left: solid 5px #4a4a4a;
+}
+.for-mobile{
+    display: none;
+}
+.content_7th{
+    width: 40px;
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+    z-index: 99;
+    display: none;
+}
+.content_7th ul{
+    list-style: none;
+    width: 100%;
+    
+}
+.content_7th ul li{
+    width: 100%;
+    height: 40px;
+    border: solid 1px gray;
+}
+.img-c7{
+    width: 100%;
+    height: 100%;
+}
+.content_7th ul li:hover{
+    cursor: pointer;
+}

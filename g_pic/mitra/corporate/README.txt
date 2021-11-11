@@ -1,0 +1,1 @@
+SUSUNAN diambil dari 28.JPG ya bang

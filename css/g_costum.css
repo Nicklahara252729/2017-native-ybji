@@ -1,0 +1,162 @@
+@media only screen and (max-device-width:767px){
+    .sub-header{
+        display: none;
+    }
+   .btn-proposal{
+    padding-left: 70px;
+    }
+    .car-con,
+    .car-con-2{
+        display: none;
+    }
+    .con-top{
+        display: block;
+        width: 30px;
+        height: 50px;
+        border-radius: 0;
+    }
+}
+@media only screen and (max-device-width:1201px){
+    .media{
+        
+    }
+    #first-menu{
+        display: none;
+    }
+    #sec-menu{
+        display: block;
+    }
+    .img-logo-nd,
+    .img-logo-nd-2{
+        display: block; 
+    }
+    .img-logo-nd-2{
+        width: 60px; 
+    }
+    .img-logo,
+    .sec-img-logo{
+        display: none;
+    }
+}
+@media only screen and (max-device-width:980px){
+    header{
+        display: none;
+    }
+    .slide-down{
+        display: block;
+    }
+    .jumbo-head{
+        
+    }
+    .sec-fill-in-content-st{
+        display: none;
+    }
+}
+@media only screen and (min-device-width:981px){
+    .slide-down{
+        display: none;
+    }
+}
+@media only screen and (max-device-width:320px){
+    .in-slide-down{
+        padding: 0;
+    }
+    .experience ul{
+    padding-left: 0px;
+    }
+    .experience ol{
+    padding-left: 20px;
+    }
+}
+@media only screen and (max-device-width:240px){
+    
+    .title-cerita-kami p{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .isi-cerita{
+        text-align: justify;
+    }
+    
+}
+@media only screen and (min-device-width:241px){
+    
+    
+}
+@media only screen and (max-device-width:1199px){
+    .coming-soon{
+        background: red;
+        opacity: 0.5;
+        margin-left: 100px;
+    }
+    .car-con{
+        margin-top: 50px;
+    }
+    .car-con-2{
+        margin-top: 80px;
+    }
+}
+@media only screen and (max-device-width:991px){
+    .coming-soon{
+        margin-left: 30px;
+    }
+    .car-con{
+        margin-top: 30px;
+    }
+    .car-con-2{
+        margin-top: 60px;
+    }
+    .f-15-cus{
+        font-size: 13px;
+    }
+    .media{
+        display: none;
+    }
+    .content_7th{
+        display: block;
+    }
+}
+@media only screen and (max-device-width:720px){
+    .coming-soon{
+        display: none;
+    }
+    .fill-content-6th{
+        display: none;
+    }
+    .content-6th{
+        height: auto;
+    }
+}
+@media only screen and (min-device-width:273px) and (max-device-width:304px){
+    .title-cerita-kami p{
+        font-size: 25px;
+        padding-top: 5px;
+    }
+}
+@media only screen and (min-device-width:241px) and (max-device-width:272px){
+    .title-cerita-kami p{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .isi-cerita{
+        text-align: justify;
+    }
+}
+@media only screen and (max-device-width:360px){
+    .for-pc{
+        display: none;
+    }
+    .for-mobile{
+        display: block;
+    }
+}
+@media only screen and (min-device-width:992px) and (max-device-width:1045px){
+    .menu ul li{
+        padding-left: 15px;
+        padding-right: 15px;
+        
+    }
+    .media{
+        padding: 0;
+    }
+}

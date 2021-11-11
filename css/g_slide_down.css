@@ -1,0 +1,93 @@
+.slide-down{
+    padding: 0;
+    position: absolute;
+    top: -480px;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+}
+.in-slide-down{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+     z-index: 9;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+.sec-in-slide-down{
+    padding-top: 10px;
+    
+}
+.btn-chev-down{
+    margin: 0 auto;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 50px;
+    padding-left: 3px;
+    font-size: 25px;
+    box-shadow: 0px 0px 5px 0px lightgray;
+    transition: all 0.5s;
+}
+.btn-chev-down:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+.top-accordion{
+    height: 40px;
+    border-radius: 0px;
+    font-family: "raleway";
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-bottom: solid 1px white;
+    background: transparent;
+}
+.in-accordion{
+    background: white;
+    border-radius: 5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.in-accordion ul{
+    list-style: none;
+    padding-top: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.in-accordion li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "raleway";
+    padding-left: 10px;
+}
+.in-accordion li:hover{
+    border-left: solid 5px #FCF513;
+    background: #f8f8f8;
+    cursor: pointer;
+}
+#icon-accor{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 6px;
+    font-size: 15px;
+    margin-top: 5px;
+    border: solid 1px white;
+}
+.first-accor,
+.thr-accor,
+.fiv-accor{
+   
+}
+.sec-accor,
+.for-accor{
+   
+}
